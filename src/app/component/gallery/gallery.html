@@ -1,0 +1,5 @@
+<div class="gallery-container">
+  @for (item of moviesList; track item.title) {
+    <app-movie-card [movie]="item"></app-movie-card>
+  }
+</div>

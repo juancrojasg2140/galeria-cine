@@ -1,0 +1,30 @@
+$verde-tematico: #00e676;
+$blanco-texto: #ffffff;
+$gris-suave: #aaaaaa;
+
+.movie-card {
+  background-color: #1a1a22;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba($blanco-texto, 0.05);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: $verde-tematico;
+    box-shadow: 0 8px 25px rgba($verde-tematico, 0.2);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 300px;
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+
+  .card-content {
+    padding: 1rem;
+    .movie-title { color: $blanco-texto; margin-bottom: 0.5rem; font-size: 1.1rem; }
+    .movie-year { color: $gris-suave; font-size: 0.85rem; }
+  }
+}
